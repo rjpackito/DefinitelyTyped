@@ -1,7 +1,6 @@
 // Type definitions for yandex-maps 2.1
 // Project: https://github.com/Delagen/typings-yandex-maps
 // Definitions by: Delagen <https://github.com/Delagen>
-//							<https://github.com/rjpackito>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 
@@ -3039,7 +3038,7 @@ declare namespace ymaps {
 	}
 	class Monitor {
     	constructor(dataManager: IDataManager | IOptionManager);
-   		add(name: string[] | string, changeCallback: (event: (object | IEvent)) => void, context: any = null, params: any = null): Monitor;
+   		add(name: string[] | string, changeCallback: (event: (object | IEvent)) => void, context?: any, params?: any): Monitor;
     	forceChange(): Monitor;
     	get(name: string): any;
     	remove(name: string): Monitor;
